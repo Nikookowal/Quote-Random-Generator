@@ -28,9 +28,6 @@ const textOutput = document.getElementById('text')
 const author = document.getElementById('author')
 const btn = document.getElementById("new-quote")
 
-textOutput.textContent = "Auguei Auguei"
-author.textContent="- Yoongi "
-
 const quotes = {
   Jhope: "burn burn burn burn", 
   Jimin: "Ei mané, saia daí",
@@ -40,14 +37,15 @@ const quotes = {
   "Karl Marx": "Trabalhadores do mundo, uni-vos"
 };
 
-console.log(Object.keys(quotes).length)
-console.log(Math.floor(Math.random() * 2))
+  const values = Object.values(quotes);
+  const names = Object.keys(quotes);
+
+  textOutput.textContent = values[Math.floor(Math.random() * values.length)]
 
 
-btn.addEventListener("click", () => {    
-  const values = Object.values(quotes)
-  const names = Object.keys(quotes)
-  const randomIndex = Math.floor(Math.random() * values.length)
+btn.addEventListener("click", () => { 
+  const randomIndex = Math.floor(Math.random() * values.length);
+   
   textOutput.textContent = values[randomIndex]
   author.textContent = '- ' + names[randomIndex]
 })
