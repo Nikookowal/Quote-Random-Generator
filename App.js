@@ -28,7 +28,7 @@ const textOutput = document.getElementById('text')
 const author = document.getElementById('author')
 const btn = document.getElementById("new-quote")
 
-textOutput.textContent = "Auguei Auguei Min yoongi"
+textOutput.textContent = "Auguei Auguei"
 author.textContent="- Yoongi "
 
 const quotes = {

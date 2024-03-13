@@ -29,10 +29,22 @@
     <script src="App.js"></script>
 
     <script>
-        $(document).ready(function() {
-$("#quote-box").css("width", "600px").css("margin-top", "180px")
+        $(document).ready(function responsive(maxWidth){
+
+            $('#credit').css("color", "white").addClass("text-center").css("margin", "15px");
+            $("#quote-box").css("margin", "auto");
+
+            var maxWidth = window.matchMedia("(max-width: 400px)");
+
+            if(maxWidth.matches){
+                $('#quote-box').css("max-width", "90%").css("margin-top", "40%")
+            } else {
+                $('#quote-box').css("max-width", "40%")
+            }
         });
-        $('#credit').css("color", "white").addClass("text-center").css("margin", "15px")
+
+        responsive(maxWidth);
+        maxWidth.addListener(responsive);
     </script> 
 
 <script>
