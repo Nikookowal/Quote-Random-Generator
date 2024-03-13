@@ -14,14 +14,14 @@
         <div id="quote-box" class="container-fluid text-center well">
             <div class="row">
                 <div id='quote-div' class="col-xs-2"> <i id='quotes-icon' class='fas fa-quote-left'></i> </div>
-                <div id="text-div" class="col-xs-8"> <p id="text" class="font">I would rather die of passion than of boredom.</p></div>
+                <div id="text-div" class="col-xs-8"> <p id="text" class="font"></p></div>
             </div>
-            <p id="author">- Sócrates</p>
+            <p id="author"></p>
                 <div id="share">
-            <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a class="twitter-share-button" id="tweet-quote" href="twitter.com/intent/tweet" target="_blank"><i class='fab fa-twitter'></i></a>
             <a id="whats-quote" href="" target="_blank"><i class='fab fa-whatsapp'></i></a>
         </div>
-            <button class="btn btn-default" id="new-quote">Nova Frase</button>
+            <button class="btn btn-default" id="new-quote">New Quote</button>
         </div>
         <p class="text-green" id="credit">by Nikodem</p>
     </body>
@@ -34,7 +34,7 @@
             $('#credit').css("color", "white").addClass("text-center").css("margin", "15px");
             $("#quote-box").css("margin", "auto").css("background-color", "#ffffff");
 
-            var maxWidth = window.matchMedia("(max-width: 400px)");
+            var maxWidth = window.matchMedia("(max-width: 600px)");
 
             if(maxWidth.matches){
                 $('#quote-box').css("max-width", "90%").css("margin-top", "40%");

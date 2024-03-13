@@ -29,18 +29,30 @@ const author = document.getElementById('author')
 const btn = document.getElementById("new-quote")
 
 const quotes = {
-  Jhope: "burn burn burn burn", 
-  Jimin: "Ei mané, saia daí",
-  Yoongi: "Auguei Auguei", 
-  Namjoon: "Cultura Livre por Bala Desejo",
-  Zoe: "Ralf Ralf",
-  "Karl Marx": "Trabalhadores do mundo, uni-vos"
+  "William Shakespeare": "A rose by any other name would smell as sweet.", 
+  "William Shakespeare": "All that glitters is not gold.",
+  "William Shakespeare": "All the world’s a stage, and all the men and women merely players.", 
+  "Jean-Paul Sartre": "Hell is other people.",
+  " Charles-Guillaume Étienne": "If you want something done right, do it yourself.",
+  "Michael Corleone": "Keep your friends close, but your enemies closer.",
+  " Albert Einstein": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+  "Neil Armstrong": "That’s one small step for a man, a giant leap for mankind.",
+  "Franklin D. Roosevelt": "The only thing we have to fear is fear itself.", 
+  "Friedrich Nietzsche": "What doesn't kill us makes us stronger.",
+  "Robert Frost": "In three words I can sum up everything I've learned about life: it goes on.",
+  "Mark Twain": "If you tell the truth, you don't have to remember anything.",
+  "Oscar Wilde": "Be yourself; everyone else is already taken",
+  "Chinese Proverb": "The best time to plant a tree was 20 years ago. The second best time is now",
+  "Mark Twain": "The secret of getting ahead is getting started",
+  "Joseph Joubert": "Kindness is loving people more than they deserve."
 };
 
   const values = Object.values(quotes);
   const names = Object.keys(quotes);
+  const firstRandomIndex = Math.floor(Math.random() * values.length)
 
-  textOutput.textContent = values[Math.floor(Math.random() * values.length)]
+  textOutput.textContent = values[firstRandomIndex]
+  author.textContent = names[firstRandomIndex]
 
 
 btn.addEventListener("click", () => { 
