@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <title>test1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="quote-box" class="container-fluid text-center well">
+            <div class="row">
+                <div id='quote-div' class="col-xs-2"> <i id='quotes-icon' class='fas fa-quote-left'></i> </div>
+                <div id="text-div" class="col-xs-8"> <p id="text" class="font">I would rather die of passion than of boredom.</p></div>
+            </div>
+            <p id="author">- Sócrates</p>
+                <div id="share">
+            <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank"><i class='fab fa-twitter'></i></a>
+            <a id="whats-quote" href="" target="_blank"><i class='fab fa-whatsapp'></i></a>
+        </div>
+            <button class="btn btn-default" id="new-quote">Nova Frase</button>
+        </div>
+        <p class="text-green" id="credit">by Nikodem</p>
+    </body>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="App.js"></script>
+
+    <script>
+        $(document).ready(function() {
+$("#quote-box").css("width", "600px").css("margin-top", "180px")
+        });
+        $('#credit').css("color", "white").addClass("text-center").css("margin", "15px")
+    </script> 
+
+<script>
+    class MyComponent extends React.Component {
+        constructor(props){
+            super(props);
+        }
+        render(){
+            return <div>
+                <h1>My First React Component</h1>
+                </div>
+        }
+
+    }
+    ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'))
+</script>
+
+</html>

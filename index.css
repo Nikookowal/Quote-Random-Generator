@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#quote-box{
+  margin: auto;
+}
+
+body{
+  background-color:palevioletred;
+  ;
+}
+
+#new-quote{
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+}
+
+#text-div{
+  text-align: left;
+  padding-left: 0;
+}
+
+#quote-div{
+  text-align: center;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+#text{
+  color: palevioletred;
+  font-size: 30px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+#author{
+  color: palevioletred;
+  text-align: right;
+  font-size: 17.5px;
+  margin-right: 7.5px;
+  padding: 0;
+}
+
+#text, #author{
+  font-family: 'Raleway', sans-serif;
+}
+
+i{
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 23.5px
+}
+
+#quotes-icon{
+  color: palevioletred;
+  background-color: white;
+  font-size: 30px;
+  padding: 0;
+  float: right;
+}
+
+#share{
+  float: left;
+}
+
+.fab{
+width: 60px
+}
