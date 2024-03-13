@@ -32,12 +32,13 @@
         $(document).ready(function responsive(maxWidth){
 
             $('#credit').css("color", "white").addClass("text-center").css("margin", "15px");
-            $("#quote-box").css("margin", "auto");
+            $("#quote-box").css("margin", "auto").css("background-color", "#ffffff");
 
             var maxWidth = window.matchMedia("(max-width: 400px)");
 
             if(maxWidth.matches){
-                $('#quote-box').css("max-width", "90%").css("margin-top", "40%")
+                $('#quote-box').css("max-width", "90%").css("margin-top", "40%");
+                $("#text")
             } else {
                 $('#quote-box').css("max-width", "35%").css("margin-top", "10%")
             }
